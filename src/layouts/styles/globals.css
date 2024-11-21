@@ -1,0 +1,46 @@
+
+/* Add any global styles here */
+@font-face {
+    font-family: 'DMSans';
+    src: url('../assets/fonts/DMSans-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Tailwind CSS custom styles */
+
+.separator-line::before {
+    @apply absolute top-0 left-0 w-full h-full bg-red-700;
+    content: '';
+    transform: scaleX(0);
+    transform-origin: center;
+    animation: growLine 10s ease-in-out infinite;
+}
+
+@keyframes growLine {
+    0% {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+
+/* Define the shake animation */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    75% { transform: translateX(-3px); }
+    100% { transform: translateX(0); }
+}
+
+/* Apply shake animation on hover */
+.social-icon:hover img {
+    animation: shake 0.5s ease-in-out;
+    animation-iteration-count: infinite;
+}
+

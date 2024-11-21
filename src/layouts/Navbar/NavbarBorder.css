@@ -1,0 +1,43 @@
+/* Glow effect for light mode */
+.shadow-glow {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5), 
+                0 0 30px rgba(255, 0, 0, 0.4),
+                0 0 45px rgba(255, 0, 0, 0.3);
+    animation: glow-light 3s infinite alternate;
+}
+
+/* Glow effect for dark mode */
+.shadow-glow-dark {
+    box-shadow: 0 0 15px rgba(81, 0, 255, 0.5), 
+                0 0 30px rgba(81, 0, 255, 0.4),
+                0 0 45px rgba(81, 0, 255, 0.3);
+    animation: glow-dark 3s infinite alternate;
+}
+
+/* Light mode glow animation */
+@keyframes glow-light {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 0, 0, 0.5), 
+                    0 0 30px rgba(255, 0, 0, 0.4),
+                    0 0 45px rgba(255, 0, 0, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.6), 
+                    0 0 40px rgba(255, 0, 0, 0.5),
+                    0 0 60px rgba(255, 0, 0, 0.4);
+    }
+}
+
+/* Dark mode glow animation */
+@keyframes glow-dark {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(81, 0, 255, 0.5), 
+                    0 0 30px rgba(81, 0, 255, 0.4),
+                    0 0 45px rgba(81, 0, 255, 0.3);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(81, 0, 255, 0.6), 
+                    0 0 40px rgba(81, 0, 255, 0.5),
+                    0 0 60px rgba(81, 0, 255, 0.4);
+    }
+}
