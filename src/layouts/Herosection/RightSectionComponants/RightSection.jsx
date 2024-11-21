@@ -3,8 +3,8 @@ import image2 from "../../../assets/images/Multistand/MultiStandUnpack.svg";
 import image3 from "../../../assets/images/Flexible/Flexible.svg";
 import image4 from "../../../assets/images/Aluminium/WhiteAlu.svg";
 import image5 from "../../../assets/images/Aluminium/WhiteAluSingle.svg";
-import { useCarousel } from "../../../hooks/useCarousel";
-import { useDarkMode } from "../../../hooks/DarkModeContext";
+import { useCarousel } from "../../../hooks/UseCarousel.jsx";
+import { useDarkMode } from "../../../hooks/DarkModeContext.jsx";
 
 const productDescriptions = [
   "MultiStand Pack - Ideal for various applications.",
